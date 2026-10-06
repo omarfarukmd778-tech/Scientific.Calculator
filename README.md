@@ -1,55 +1,128 @@
-# Scientific Calculator (Advanced Java Swing Application)
+# 🧮 Scientific Calculator (Java Swing)
 
-## 📌 Project Overview
-The **Scientific Calculator** is a robust desktop application developed using **Java Swing**. It is designed to bridge the gap between simple arithmetic and complex scientific calculations, providing an intuitive, modern, and user-friendly experience[cite: 1]. The application features a clean, dark-mode interface and handles mathematical computations with precision[cite: 1].
+![Java](https://img.shields.io/badge/Java-JDK-orange?logo=openjdk)
+![GUI](https://img.shields.io/badge/GUI-Java%20Swing-blue)
+![Theme](https://img.shields.io/badge/Theme-Dark%20Mode-black)
+
+A robust desktop **Scientific Calculator** built with **Java Swing**. It bridges the gap between simple arithmetic and advanced scientific calculations, offering a clean, modern, dark-themed and user-friendly interface.
 
 ---
 
-## ✨ Comprehensive Feature Set
+## 📌 Table of Contents
+
+- [Features](#-features)
+- [Technical Details](#-technical-details)
+- [Getting Started](#-getting-started)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [Author](#-author)
+
+---
+
+## ✨ Features
 
 ### 🧮 Mathematical Capabilities
-* **Basic & Advanced Arithmetic:** Supports all standard operations including addition, subtraction, multiplication, and division[cite: 1].
-* **Trigonometry & Logarithms:** Includes advanced functions such as `sin`, `cos`, `tan`, `log` (base 10), and `ln` (natural logarithm)[cite: 1].
-* **Exponential Power:** Dedicated support for squaring numbers (`x^2`), finding square roots (`√x`), and general power calculations (`x^y`)[cite: 1].
-* **Constants:** Quick access buttons for mathematical constants like $\pi$ (Pi) and $e$ (Euler's number)[cite: 1].
 
-### 🖥 User Interface & Experience (UI/UX)
-* **Modern Aesthetic:** A sleek dark-themed design using customized color palettes (`BG_DARK`, `BG_PANEL`) to reduce eye strain during prolonged use[cite: 1].
-* **Dynamic Display:** The calculator features a responsive display that automatically adjusts font sizes based on the length of the input, ensuring readability[cite: 1].
-* **Interactive Feedback:** Each interaction is supported by button hover effects and a status indicator panel that tracks the current state (Power, Ready, Error, Result)[cite: 1].
-* **User Control:** Includes convenient memory features like `ANS` (recalls last answer), `CE` (clear entry), and `AC` (all clear)[cite: 1].
+- **Basic Arithmetic:** Addition, subtraction, multiplication and division.
+- **Trigonometry & Logarithms:** `sin`, `cos`, `tan`, `log` (base 10) and `ln` (natural log).
+- **Exponents & Roots:** Square (`x²`), square root (`√x`) and general power (`x^y`).
+- **Constants:** Quick buttons for **π (Pi)** and **e (Euler's number)**.
+
+### 🖥 User Interface & Experience
+
+- **Modern Dark Theme:** Custom color palette (`BG_DARK`, `BG_PANEL`) to reduce eye strain.
+- **Dynamic Display:** Font size adjusts automatically based on input length.
+- **Interactive Feedback:** Button hover effects and a status indicator showing the current state (`Power`, `Ready`, `Error`, `Result`).
+- **User Control:**
+  - `ANS` – recall the last answer
+  - `CE` – clear entry
+  - `AC` – all clear
+
+### 🛡 Error Handling
+
+Detects and displays errors for invalid input, such as division by zero and domain-specific math errors.
 
 ---
 
-## 🛠 Technical Implementation Details
-* **Core Technology:** Built using **Java**[cite: 1].
-* **GUI Framework:** Utilizes **Java Swing** (`javax.swing`) for creating a platform-independent and stable interface[cite: 1].
-* **Event Architecture:** Implements `MouseAdapter` and `ActionListener` interfaces to capture user inputs and trigger real-time calculations[cite: 1].
-* **Layout Structure:** Managed through `BorderLayout` and `GridLayout` to ensure a balanced, aesthetically pleasing, and functional button grid[cite: 1].
-* **Error Handling:** Features intelligent logic to catch and display errors for invalid inputs, such as division by zero or domain-specific math errors[cite: 1].
+## 🛠 Technical Details
+
+| Component | Description |
+|-----------|-------------|
+| Language | Java |
+| GUI Framework | Java Swing (`javax.swing`) |
+| Event Handling | `ActionListener` and `MouseAdapter` |
+| Layouts | `BorderLayout` and `GridLayout` |
+| Platform | Cross-platform (Windows, macOS, Linux) |
 
 ---
 
-## 🚀 How to Get Started
+## 🚀 Getting Started
 
 ### Prerequisites
-* Ensure that the **JDK (Java Development Kit)** is installed and configured on your computer.
+
+- **JDK (Java Development Kit)** installed and configured (JDK 8 or higher recommended).
+
+Check your installation:
+
+```bash
+java -version
+javac -version
+```
 
 ### Installation & Execution
-1.  **Clone or Download:** Copy the `Scientific_calculator.java` source code to your machine.
-2.  **Compile:** Open your terminal or Command Prompt, navigate to the folder, and run:
+
+1. **Clone the repository**
+
 ```bash
-    javac Scientific_calculator.java
-    ```
-3.  **Run:** Launch the application by running:
+   git clone https://github.com/<your-username>/<your-repo-name>.git
+   cd <your-repo-name>
+```
+
+   Or simply download `Scientific_calculator.java`.
+
+2. **Compile**
+
 ```bash
-    java Scientific_calculator
-    ```
+   javac Scientific_calculator.java
+```
+
+3. **Run**
+
+```bash
+   java Scientific_calculator
+```
 
 ---
 
-## 👨‍💻 Author & Attribution
-* **Md Omor Faruk** 
-* **Student ID:** 11240321755[cite: 1]
+## 💡 Usage
 
-*Developed as part of the Object-Oriented Programming II Lab project.*
+1. Click number and operator buttons to build an expression.
+2. Use function buttons (`sin`, `cos`, `tan`, `log`, `ln`, `√x`, `x²`, `x^y`) for scientific operations.
+3. Press `π` or `e` to insert constants.
+4. Press `ANS` to reuse the previous result.
+5. Use `CE` to clear the current entry or `AC` to reset everything.
+
+---
+
+## 📂 Project Structure
+
+```
+Scientific-Calculator/
+├── Scientific_calculator.java
+└── README.md
+```
+
+---
+
+## 👨‍💻 Author
+
+**Md Omor Faruk**
+Student ID: 11240321755
+
+Developed as part of the **Object-Oriented Programming II Lab** project.
+
+---
+
+## 📄 License
+
+This project is created for educational purposes.
